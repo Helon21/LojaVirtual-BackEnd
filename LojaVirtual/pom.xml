@@ -14,7 +14,11 @@
 	<name>LojaVirtual</name>
 	<description>Projeto de uma loja virtual</description>
 	<properties>
+<<<<<<< HEAD
 		<java.version>11</java.version>
+=======
+		<java.version>17</java.version>
+>>>>>>> parent of 86984a3 (Implementando CRUD de permissão e Pessoa)
 	</properties>
 	<dependencies>
 		<dependency>
