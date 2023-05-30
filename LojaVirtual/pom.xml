@@ -14,7 +14,7 @@
 	<name>LojaVirtual</name>
 	<description>Projeto de uma loja virtual</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
