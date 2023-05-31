@@ -13,10 +13,4 @@ public class CidadeDto {
     Estado estado;
     Long estadoId;
 
-    public CidadeDto(Long id, String nome, Long estadoId){
-        this.id;
-        this.nome;
-        this.estadoId;
-    }
-
 }
