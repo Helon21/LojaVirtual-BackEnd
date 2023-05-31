@@ -15,14 +15,10 @@
 	<description>Projeto de uma loja virtual</description>
 	<properties>
 <<<<<<< HEAD
-<<<<<<< HEAD
 		<java.version>11</java.version>
 =======
 		<java.version>17</java.version>
 >>>>>>> parent of 86984a3 (Implementando CRUD de permissão e Pessoa)
-=======
-		<java.version>19</java.version>
->>>>>>> parent of 125fcb0 (Atualizando crud's entidade e iniciando DTO's)
 	</properties>
 	<dependencies>
 		<dependency>
