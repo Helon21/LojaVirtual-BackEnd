@@ -10,8 +10,8 @@ import java.util.Date;
 @Table(name="Cidade")
 @Data
 public class Cidade {
-    private String name;
-    private Date dataCriacao;
-    private Date dataAtualizacao;
+	private String nome;
+	private Date dataCriacao;
+	private Date dataAtualizacao;
 
 }

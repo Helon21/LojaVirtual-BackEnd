@@ -4,15 +4,15 @@ import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import javax.transaction.Transactional;
+//import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import com.dev.lojavirtualBackEnd.entity.Estado;
-import com.dev.backend.exception.GenericException;
-import com.dev.backend.repository.EstadoRepository;
+//import com.dev.backend.exception.GenericException;
+import com.dev.lojavirtualBackEnd.repository.EstadoRepository;
 
 @Service
 public class EstadoService {
@@ -40,10 +40,8 @@ public class EstadoService {
     }
 
     public void excluir(Long id) {
-        Estado estado = estadoRepository.findById(id)
-                .orElseThrow(() -> new NoSuchElementException("Estado não encontrado."));
+        Estado estado = estadoRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Estado não encontrado."));
         estadoRepository.delete(estado);
-
     }
 
 }

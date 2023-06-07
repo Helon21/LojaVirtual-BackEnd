@@ -1,5 +1,12 @@
 package com.dev.lojavirtualBackEnd.repository;
 
-public class PermissaoPessoaRepository {
-    
+import com.dev.lojavirtualBackEnd.entity.Permissao;
+import com.dev.lojavirtualBackEnd.entity.PermissaoPessoa;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface PermissaoPessoaRepository extends JpaRepository<PermissaoPessoa, Long> {
+
 }
