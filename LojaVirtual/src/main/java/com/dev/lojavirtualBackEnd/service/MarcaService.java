@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.dev.lojavirtualBackEnd.entity.Marca;
-import com.dev.lojavirtualBackEnd.repository.CidadeRepository;
+
 import com.dev.lojavirtualBackEnd.repository.MarcaRepository;
 
 @Service

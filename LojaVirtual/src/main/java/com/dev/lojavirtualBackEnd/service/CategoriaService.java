@@ -32,5 +32,6 @@ public class CategoriaService {
     }
     public void excluir(Long id){
         Categoria categoria = categoriaRepository.findById(id).orElseThrow(() -> new NoSuchElementException("Categoria não encontrada"));
+        categoriaRepository.delete(categoria);
     }
 }

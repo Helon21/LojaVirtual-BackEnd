@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 //import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
+
 import org.springframework.stereotype.Service;
 
 import com.dev.lojavirtualBackEnd.entity.Estado;
@@ -17,7 +17,7 @@ import com.dev.lojavirtualBackEnd.repository.EstadoRepository;
 @Service
 public class EstadoService {
 
-    @Autowired
+    @Autowired //deixa para o spring resolver as dependências, ao invés de criar uma instância.
     private EstadoRepository estadoRepository;
 
     public List<Estado> buscarTodos() {
@@ -30,7 +30,7 @@ public class EstadoService {
 
     public Estado inserir(Estado estado) {
         estado.setDataCriacao(new Date());
-        Estado estadoNovo = estadoRepository.saveAndFlush(estado);
+        Estado estadoNovo = estadoRepository.saveAndFlush(estado); //save and flush salva diretamente no banco
         return estadoNovo;
     }
 
