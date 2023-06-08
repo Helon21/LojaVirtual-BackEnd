@@ -12,6 +12,7 @@ import com.dev.lojavirtualBackEnd.repository.CategoriaRepository;
 
 @Service
 public class CategoriaService {
+
     @Autowired
     private CategoriaRepository categoriaRepository;
 

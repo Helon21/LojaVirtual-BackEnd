@@ -13,35 +13,36 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dev.lojavirtualBackEnd.entity.Produto;
-import com.dev.lojavirtualBackEnd.service.ProdutoService;
+import com.dev.lojavirtualBackEnd.entity.Permissao;
+import com.dev.lojavirtualBackEnd.service.PermissaoService;
 
 @RestController
-@RequestMapping
-public class ProdutoController {
+@RequestMapping("/api/permissao")
+public class PermissaoController {
     
     @Autowired
-    private ProdutoService produtoService;
+    private PermissaoService permissaoService;
 
     @GetMapping("/")
-    public List<Produto> buscarTodos(){
-        return produtoService.buscarTodos();
+    public List<Permissao> buscarTodos(){
+        return permissaoService.buscarTodos();
     }
 
     @PostMapping("/")
-    public Produto inserir(@RequestBody Produto produto){
-        return produtoService.inserir(produto);
+    public Permissao inserir(@RequestBody Permissao permissao){
+        return permissaoService.inserir(permissao);
     }
 
     @PutMapping("/")
-    public Produto alterar(@RequestBody Produto produto){
-        return produtoService.alterar(produto);
+    public Permissao alterar(@RequestBody Permissao permissao){
+        return permissaoService.alterar(permissao);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluir(@PathVariable("id") Long id){
-        produtoService.excluir(id);
+        permissaoService.excluir(id);
         return ResponseEntity.ok().build();
     }
+    
 
 }
